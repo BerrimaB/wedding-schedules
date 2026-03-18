@@ -1,0 +1,37 @@
+{
+  "generated_at": "2026-03-19T08:41:15",
+  "jobs": [
+    {
+      "title": "WS_Grant_20.03.26",
+      "booking_date": "2026-03-20",
+      "client": "James & Antonia",
+      "venue": "THE STABLES",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Grant_20.03.26/"
+    },
+    {
+      "title": "WS_Carnell_21.03.26",
+      "booking_date": "2026-03-21",
+      "client": "Georgina & John",
+      "venue": "THE BOOK BARN",
+      "status": "LIVE",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Carnell_21.03.26/"
+    },
+    {
+      "title": "WS_Carpenter_21.03.26",
+      "booking_date": "2026-03-21",
+      "client": "Shilo & Campbell",
+      "venue": "MONTROSE HOUSE",
+      "status": "LIVE",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Carpenter_21.03.26/"
+    },
+    {
+      "title": "WS_YEE_28.03.26",
+      "booking_date": "2026-03-28",
+      "client": "2X MINIBUSES FOR MARGARET TO GROWWILD ON SAT 28.03.26",
+      "venue": "GROWWILD",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_YEE_28.03.26/"
+    }
+  ]
+}
