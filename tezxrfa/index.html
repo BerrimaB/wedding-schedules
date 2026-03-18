@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Berrima Buslines – Select Bus</title>
+  <style>
+
+.depot .cards{display:grid;gap:10px}
+.depot .cards.two{grid-template-columns:1fr 1fr}
+.depot .cards.one{grid-template-columns:1fr}
+.card-title{font-weight:700;letter-spacing:.06em;font-size:12px}
+.card-time{font-size:18px;font-weight:800;margin-top:4px}
+.card-note{margin-top:6px;opacity:.92}
+
+
+
+.depot .cards{display:grid;gap:10px}
+.depot .cards.two{grid-template-columns:1fr 1fr}
+.depot .cards.one{grid-template-columns:1fr}
+.card-title{font-weight:700;letter-spacing:.06em;font-size:12px}
+.card-time{font-size:18px;font-weight:800;margin-top:4px}
+.card-note{margin-top:6px;opacity:.92}
+
+
+
+    :root { --border:#e6e6e6; --muted:#666; }
+    body { font-family: Arial, sans-serif; margin: 16px; line-height: 1.35; }
+    .card { border: 1px solid var(--border); border-radius: 16px; padding: 14px; margin-bottom: 12px; }
+    .header { display:flex; align-items:center; gap:14px; }
+    .logo { height: 44px; width:auto; }
+    .title { font-size: 18px; font-weight: 900; }
+    .meta { margin-top: 6px; color:#222; }
+    .meta div { margin-top: 2px; }
+    .label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; }
+    .btn {
+      display:block; text-decoration:none; color:#111;
+      border:1px solid var(--border); border-radius: 16px;
+      padding: 14px; margin: 10px 0; font-weight: 900;
+      text-align:center; font-size: 16px;
+    }
+    .muted { color: var(--muted); font-size: 12px; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="header">
+      <img src="berrima_buslines.jpg" class="logo" alt="Berrima Buslines" />
+      <div>
+        <div class="title">Driver Mobile View</div>
+        <div class="meta">
+          <div><b>WEDDING SERVICE</b></div>
+          <div><b>18-03-2026</b></div>
+          <div>CLIENT: <b>TAEDS</b></div>
+          <div>VENUE: <b>GROWWILD</b></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="label">Select your bus</div>
+    <a class="btn" href="bus_1.html">BUS 1</a>
+    <a class="btn" href="bus_2.html">BUS 2</a>
+    <div class="muted">Tip: bookmark this page for tonight’s job.</div>
+  </div>
+
+  <div class="card">
+    <div class="muted">BERRIMA BUSLINES • Mobile View</div>
+  </div>
+
+</body>
+</html>
