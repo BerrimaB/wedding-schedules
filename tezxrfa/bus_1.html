@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BUS 1 – Driver Run Sheet</title>
+  <style>
+
+.depot .cards{display:grid;gap:10px}
+.depot .cards.two{grid-template-columns:1fr 1fr}
+.depot .cards.one{grid-template-columns:1fr}
+.card-title{font-weight:700;letter-spacing:.06em;font-size:12px}
+.card-time{font-size:18px;font-weight:800;margin-top:4px}
+.card-note{margin-top:6px;opacity:.92}
+
+:root { --border:#e6e6e6; --muted:#666; --warnbg:#fff7e6; --warnbd:#ffe1a6; }
+    body { font-family: Arial, sans-serif; margin: 16px; line-height: 1.35; }
+    .card { border: 1px solid var(--border); border-radius: 16px; padding: 14px; margin-bottom: 12px; }
+    .header { display:flex; align-items:center; gap:14px; }
+    .logo { height: 44px; width:auto; }
+    .title { font-size: 18px; font-weight: 900; }
+    .meta { margin-top: 6px; color:#222; }
+    .meta div { margin-top: 2px; }
+    .label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
+    .big { font-size: 18px; font-weight: 900; }
+    .stop { border: 1px solid var(--border); border-radius: 16px; padding: 12px; margin: 10px 0; }
+    .stop a { text-decoration:none; color:inherit; display:block; }
+    .stop-name { font-size: 16px; font-weight: 900; }
+    .stop-addr { margin-top:4px; color:var(--muted); font-size: 13px; }
+    .tap { margin-top:6px; color:var(--muted); font-size: 12px; }
+    .stop-notes { margin-top:10px; padding:10px; border-radius:14px; background:var(--warnbg); border:1px solid var(--warnbd); }
+    .note { margin:6px 0; font-weight: 700; }
+    .global-notes { background: var(--warnbg); border:1px solid var(--warnbd); }
+    .muted { color: var(--muted); font-size: 12px; }
+    .back { display:inline-block; margin-top: 6px; font-size: 12px; color:#111; text-decoration:none; border:1px solid var(--border); padding:8px 10px; border-radius: 12px; }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="header">
+      <img src="berrima_buslines.jpg" class="logo" alt="Berrima Buslines" />
+      <div>
+        <div class="title">BUS 1 – Driver Run Sheet</div>
+        <div class="meta">
+          <div><b>18-03-2026</b></div>
+          <div>CLIENT: <b>TAEDS</b></div>
+          <div>VENUE: <b>GROWWILD</b></div>
+        </div>
+        <a class="back" href="index.html">← Back to bus list</a>
+      </div>
+    </div>
+  </div>
+
+  
+
+  <div class="card">
+    <div class="label">Stops</div>
+
+                    <div class="stop">
+                      <a href="https://www.google.com/maps/search/?api=1&query=MITTAGONG+CARAVAN+PARK">
+                        <div class="stop-name">2:17PM — MITTAGONG CARAVAN PARK</div>
+                        <div class="stop-addr">MITTAGONG CARAVAN PARK</div>
+                        <div class="tap">Tap to navigate</div>
+                      </a>
+      <div class="stop-notes">
+        <div class="note">⚠ Wait for bus at Bus stop on Beatrice St</div>
+      </div>
+                    </div>
+                
+                    <div class="stop">
+                      <a href="https://www.google.com/maps/search/?api=1&query=ARRIVE+GROWWILD">
+                        <div class="stop-name">2:30PM — ARRIVE GROWWILD</div>
+                        <div class="stop-addr">ARRIVE GROWWILD</div>
+                        <div class="tap">Tap to navigate</div>
+                      </a>
+                    </div>
+                
+  </div>
+
+
+  <div class="card">
+    <div class="muted">BERRIMA BUSLINES • Mobile View</div>
+  </div>
+
+</body>
+</html>
