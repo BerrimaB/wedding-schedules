@@ -13,29 +13,57 @@
 .card-time{font-size:18px;font-weight:800;margin-top:4px}
 .card-note{margin-top:6px;opacity:.92}
 
-:root { --border:#e6e6e6; --muted:#666; --warnbg:#fff7e6; --warnbd:#ffe1a6; }
-    body { font-family: Arial, sans-serif; margin: 16px; line-height: 1.35; }
-    .card { border: 1px solid var(--border); border-radius: 16px; padding: 14px; margin-bottom: 12px; }
+    :root { --border:#e6e6e6; --muted:#666; --warnbg:#fff7e6; --warnbd:#ffe1a6; --bg:#f7f7f7; --panel:#fff; --next:#eaf7ea; --nextbd:#b7e0b7; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.35; background: var(--bg); color:#111; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 16px; }
+    .card { border: 1px solid var(--border); border-radius: 18px; padding: 16px; margin-bottom: 14px; background: var(--panel); box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+    .mini-card { margin-bottom:0; }
     .header { display:flex; align-items:center; gap:14px; }
-    .logo { height: 44px; width:auto; }
-    .title { font-size: 18px; font-weight: 900; }
+    .logo { height: 46px; width:auto; }
+    .title { font-size: 20px; font-weight: 900; }
     .meta { margin-top: 6px; color:#222; }
-    .meta div { margin-top: 2px; }
-    .label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; }
-    .big { font-size: 18px; font-weight: 900; }
-    .stop { border: 1px solid var(--border); border-radius: 16px; padding: 12px; margin: 10px 0; }
+    .meta div { margin-top: 3px; }
+    .label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 6px; font-weight:700; }
+    .muted { color: var(--muted); font-size: 12px; }
+    .toolbar { position: sticky; top: 0; z-index: 10; display:flex; gap:10px; margin-bottom:14px; padding:10px 0; background: linear-gradient(to bottom, rgba(247,247,247,0.98), rgba(247,247,247,0.88)); backdrop-filter: blur(4px); }
+    .toolbtn { display:inline-block; text-decoration:none; color:#111; border:1px solid var(--border); background:#fff; padding:10px 12px; border-radius:14px; font-size:13px; font-weight:800; }
+    .summary-grid { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+    .summary-item { border:1px solid var(--border); border-radius:14px; padding:12px; background:#fff; }
+    .summary-value { font-size:18px; font-weight:900; margin-top:4px; }
+    .last-updated { display:inline-block; margin-top:10px; padding:8px 10px; border-radius:12px; background:#f1f1f1; font-size:12px; font-weight:700; }
+    .depart-banner { margin-top:10px; padding:12px; border-radius:14px; background:#f4f4f4; font-weight:900; }
+    .stop { border: 1px solid var(--border); border-radius: 18px; padding: 14px; margin: 12px 0; background:#fff; scroll-margin-top: 84px; }
     .stop a { text-decoration:none; color:inherit; display:block; }
-    .stop-name { font-size: 16px; font-weight: 900; }
-    .stop-addr { margin-top:4px; color:var(--muted); font-size: 13px; }
-    .tap { margin-top:6px; color:var(--muted); font-size: 12px; }
+    .stop-top { display:flex; gap:12px; align-items:flex-start; }
+    .stop-main { min-width:0; flex:1; }
+    .time-chip { min-width:92px; text-align:center; border-radius:14px; background:#111; color:#fff; padding:10px 8px; font-size:15px; font-weight:900; line-height:1.1; }
+    .return-only-chip { background:#666; }
+    .stop-name { font-size: 18px; font-weight: 900; line-height:1.15; }
+    .stop-addr { margin-top:5px; color:var(--muted); font-size: 13px; word-break: break-word; }
+    .tap { margin-top:8px; color:var(--muted); font-size: 12px; font-weight:700; }
     .stop-notes { margin-top:10px; padding:10px; border-radius:14px; background:var(--warnbg); border:1px solid var(--warnbd); }
     .note { margin:6px 0; font-weight: 700; }
     .global-notes { background: var(--warnbg); border:1px solid var(--warnbd); }
-    .muted { color: var(--muted); font-size: 12px; }
-    .back { display:inline-block; margin-top: 6px; font-size: 12px; color:#111; text-decoration:none; border:1px solid var(--border); padding:8px 10px; border-radius: 12px; }
+    .stop.next-stop { background: var(--next); border-color: var(--nextbd); box-shadow: 0 0 0 2px rgba(183,224,183,.35) inset; }
+    .stop.next-stop .time-chip { background:#1d6f2a; }
+    .next-badge { display:inline-block; margin-top:8px; padding:7px 10px; border-radius:12px; background:var(--next); border:1px solid var(--nextbd); font-size:12px; font-weight:900; }
+    @media (max-width: 560px) {
+      .wrap { padding: 12px; }
+      .summary-grid { grid-template-columns:1fr; }
+      .stop-top { flex-direction:column; gap:8px; }
+      .time-chip { min-width:0; width:100%; }
+      .toolbar { gap:8px; flex-wrap:wrap; }
+      .toolbtn { flex:1 1 auto; text-align:center; }
+    }
   </style>
 </head>
 <body>
+<div class="wrap">
+  <div class="toolbar">
+    <a class="toolbtn" href="index.html">← Bus list</a>
+    <a class="toolbtn" href="javascript:window.location.reload();">Refresh page</a>
+  </div>
 
   <div class="card">
     <div class="header">
@@ -47,9 +75,19 @@
           <div>CLIENT: <b>TAEDSEQWE</b></div>
           <div>VENUE: <b>GROWWILD</b></div>
         </div>
-        <a class="back" href="index.html">← Back to bus list</a>
+        <div class="last-updated">LAST UPDATED: 18-03-2026 10:08PM</div>
+        
       </div>
     </div>
+  </div>
+
+  <div class="card">
+    <div class="label">Quick Summary</div>
+    <div class="summary-grid">
+      <div class="summary-item"><div class="label">Bus</div><div class="summary-value">BUS 1</div></div>
+      <div class="summary-item"><div class="label">Timed Stops</div><div class="summary-value">2</div></div>
+    </div>
+    <div id="nextStopBadge" class="next-badge" style="display:none;">NEXT STOP HIGHLIGHTED BELOW</div>
   </div>
 
   
@@ -57,10 +95,9 @@
   <div class="card">
     <div class="label">Stops</div>
 
-                    <div class="stop">
+                    <div class="stop" data-stop-time="2:17PM">
                       <a href="https://www.google.com/maps/search/?api=1&query=MITTAGONG+CARAVAN+PARK">
-                        <div class="stop-name">2:17PM — MITTAGONG CARAVAN PARK</div>
-                        <div class="stop-addr">MITTAGONG CARAVAN PARK</div>
+                        <div class="stop-top"><div class="time-chip">2:17PM</div><div class="stop-main"><div class="stop-name">MITTAGONG CARAVAN PARK</div><div class="stop-addr">MITTAGONG CARAVAN PARK</div></div></div>
                         <div class="tap">Tap to navigate</div>
                       </a>
       <div class="stop-notes">
@@ -68,10 +105,9 @@
       </div>
                     </div>
                 
-                    <div class="stop">
+                    <div class="stop" data-stop-time="2:30PM">
                       <a href="https://www.google.com/maps/search/?api=1&query=ARRIVE+GROWWILD">
-                        <div class="stop-name">2:30PM — ARRIVE GROWWILD</div>
-                        <div class="stop-addr">ARRIVE GROWWILD</div>
+                        <div class="stop-top"><div class="time-chip">2:30PM</div><div class="stop-main"><div class="stop-name">ARRIVE GROWWILD</div><div class="stop-addr">ARRIVE GROWWILD</div></div></div>
                         <div class="tap">Tap to navigate</div>
                       </a>
                     </div>
@@ -82,6 +118,45 @@
   <div class="card">
     <div class="muted">BERRIMA BUSLINES • Mobile View</div>
   </div>
+</div>
+<script>
+(function() {
+  function parseTimeToToday(raw) {
+    if (!raw) return null;
+    raw = String(raw).trim().toUpperCase();
+    if (!raw || raw === 'RETURN ONLY') return null;
+    var m = raw.match(/^(\d{1,2}):(\d{2})(AM|PM)$/);
+    if (!m) return null;
+    var h = parseInt(m[1], 10);
+    var min = parseInt(m[2], 10);
+    var ap = m[3];
+    if (ap === 'PM' && h !== 12) h += 12;
+    if (ap === 'AM' && h === 12) h = 0;
+    var d = new Date();
+    d.setHours(h, min, 0, 0);
+    return d;
+  }
 
+  var stops = Array.prototype.slice.call(document.querySelectorAll('.stop[data-stop-time]'));
+  var now = new Date();
+  var next = null;
+  stops.forEach(function(el) {
+    var dt = parseTimeToToday(el.getAttribute('data-stop-time'));
+    if (!dt) return;
+    if (dt >= now && !next) next = el;
+  });
+  if (!next) {
+    for (var i = stops.length - 1; i >= 0; i--) {
+      var dt2 = parseTimeToToday(stops[i].getAttribute('data-stop-time'));
+      if (dt2) { next = stops[i]; break; }
+    }
+  }
+  if (next) {
+    next.classList.add('next-stop');
+    var badge = document.getElementById('nextStopBadge');
+    if (badge) badge.style.display = 'inline-block';
+  }
+})();
+</script>
 </body>
 </html>
