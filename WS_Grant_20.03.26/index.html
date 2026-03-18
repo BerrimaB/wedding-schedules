@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Berrima Buslines – Select Bus</title>
+  <style>
+
+.depot .cards{display:grid;gap:10px}
+.depot .cards.two{grid-template-columns:1fr 1fr}
+.depot .cards.one{grid-template-columns:1fr}
+.card-title{font-weight:700;letter-spacing:.06em;font-size:12px}
+.card-time{font-size:18px;font-weight:800;margin-top:4px}
+.card-note{margin-top:6px;opacity:.92}
+
+    :root { --border:#e6e6e6; --muted:#666; --bg:#f7f7f7; --accent:#111; --panel:#ffffff; --recent-bg:#fff7e6; --recent-bd:#ffd78e; }
+    * { box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; margin: 0; line-height: 1.35; background: var(--bg); color:#111; transition: background-color .35s ease; }
+    body.flash-updated { background:#eef9ee; }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 16px; }
+    .card { border: 1px solid var(--border); border-radius: 18px; padding: 16px; margin-bottom: 14px; background: var(--panel); box-shadow: 0 1px 2px rgba(0,0,0,.04); }
+    .header { display:flex; align-items:center; gap:14px; }
+    .logo { height: 46px; width:auto; }
+    .title { font-size: 20px; font-weight: 900; }
+    .meta { margin-top: 6px; color:#222; }
+    .meta div { margin-top: 3px; }
+    .label { font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin-bottom: 8px; font-weight:700; }
+    .toolbar { position: sticky; top: 0; z-index: 10; display:flex; gap:10px; margin-bottom:14px; padding:10px 0; background: linear-gradient(to bottom, rgba(247,247,247,0.98), rgba(247,247,247,0.88)); backdrop-filter: blur(4px); }
+    .toolbtn { display:inline-block; text-decoration:none; color:#111; border:1px solid var(--border); background:#fff; padding:10px 12px; border-radius:14px; font-size:13px; font-weight:800; }
+    .btn {
+      display:block; text-decoration:none; color:#111; background:#fff;
+      border:1px solid var(--border); border-radius: 18px;
+      padding: 16px; margin: 10px 0; font-weight: 900;
+    }
+    .btn-main { display:block; font-size: 20px; line-height:1.1; }
+    .btn-sub { display:block; margin-top:5px; color:var(--muted); font-size: 13px; font-weight:700; }
+    .last-updated { display:inline-block; margin-top:10px; padding:8px 10px; border-radius:12px; background:#f1f1f1; font-size:12px; font-weight:700; }
+    .banner { display:none; margin-bottom:12px; padding:12px 14px; border-radius:14px; background:var(--recent-bg); border:1px solid var(--recent-bd); font-size:13px; font-weight:900; }
+    .muted { color: var(--muted); font-size: 12px; }
+    @media (max-width: 560px) {
+      .wrap { padding:12px; }
+      .toolbar { gap:8px; flex-wrap:wrap; }
+      .toolbtn { flex:1 1 auto; text-align:center; }
+    }
+  </style>
+</head>
+<body data-generated-iso="2026-03-19T08:42:39">
+<div class="wrap">
+  <div class="toolbar">
+    <a class="toolbtn" href="javascript:forceRefreshCurrentPage();">Refresh page</a>
+    <a class="toolbtn" href="javascript:forceRefreshAllBuses();">Force refresh all buses</a>
+  </div>
+
+  <div id="recentUpdateBanner" class="banner"></div>
+  <div id="pageRefreshedBanner" class="banner" style="display:none;">PAGE REFRESHED — YOU ARE VIEWING THE LATEST VERSION AVAILABLE ON THIS DEVICE</div>
+
+  <div class="card">
+    <div class="header">
+      <img src="berrima_buslines.jpg" class="logo" alt="Berrima Buslines" />
+      <div>
+        <div class="title">Driver Mobile View</div>
+        <div class="meta">
+          <div><b>WEDDING SERVICE</b></div>
+          <div><b>20-03-2026</b></div>
+          <div>CLIENT: <b>JAMES &amp; ANTONIA</b></div>
+          <div>VENUE: <b>THE STABLES (ARRIVE 2:40PM / DEPART 11:30PM)</b></div>
+        </div>
+        <div class="last-updated">LAST UPDATED: 19-03-2026 08:42AM</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card">
+    <div class="label">Select your bus</div>
+    <a class="btn bus-link" href="bus_1.html">
+      <span class="btn-main">BUS 1</span>
+      <span class="btn-sub">4 stops</span>
+    </a>
+    <div class="muted">Tip: bookmark this page for tonight’s job.</div>
+  </div>
+
+  <div class="card">
+    <div class="muted">BERRIMA BUSLINES • Mobile View</div>
+  </div>
+</div>
+<script>
+
+function buildBustUrl(url) {
+  try {
+    var u = new URL(url, window.location.href);
+    u.searchParams.set('v', String(Date.now()));
+    return u.toString();
+  } catch (e) {
+    return url;
+  }
+}
+function parseGeneratedIso(raw) {
+  if (!raw) return null;
+  var d = new Date(raw);
+  if (isNaN(d.getTime())) return null;
+  return d;
+}
+function showRecentBanner() {
+  var banner = document.getElementById('recentUpdateBanner');
+  var page = document.body;
+  if (!banner || !page) return;
+  var iso = page.getAttribute('data-generated-iso') || '';
+  var d = parseGeneratedIso(iso);
+  if (!d) return;
+  var diffMin = Math.max(0, Math.round((Date.now() - d.getTime()) / 60000));
+  if (diffMin <= 180) {
+    banner.style.display = 'block';
+    if (diffMin <= 1) {
+      banner.textContent = 'SCHEDULE UPDATED JUST NOW — PLEASE REFRESH IF YOU WERE ALREADY VIEWING THIS JOB';
+    } else {
+      banner.textContent = 'SCHEDULE UPDATED RECENTLY — ' + diffMin + ' MIN AGO';
+    }
+  }
+}
+function flashIfForcedRefresh() {
+  try {
+    var forcedAt = parseInt(sessionStorage.getItem('bb_force_refresh_at') || '0', 10);
+    if (!forcedAt) return;
+    if ((Date.now() - forcedAt) > 15000) {
+      sessionStorage.removeItem('bb_force_refresh_at');
+      return;
+    }
+    document.body.classList.add('flash-updated');
+    var pageBanner = document.getElementById('pageRefreshedBanner');
+    if (pageBanner) pageBanner.style.display = 'block';
+    setTimeout(function() {
+      document.body.classList.remove('flash-updated');
+      if (pageBanner) pageBanner.style.display = 'none';
+    }, 2200);
+    sessionStorage.removeItem('bb_force_refresh_at');
+  } catch (e) {}
+}
+function forceRefreshCurrentPage() {
+  try { sessionStorage.setItem('bb_force_refresh_at', String(Date.now())); } catch (e) {}
+  window.location.href = buildBustUrl(window.location.href);
+}
+function forceRefreshAllBuses() {
+  try { sessionStorage.setItem('bb_force_refresh_at', String(Date.now())); } catch (e) {}
+  var links = document.querySelectorAll('.bus-link');
+  links.forEach(function(a) {
+    a.href = buildBustUrl(a.getAttribute('href') || a.href);
+  });
+  window.location.href = buildBustUrl(window.location.href);
+}
+
+showRecentBanner();
+flashIfForcedRefresh();
+</script>
+</body>
+</html>
