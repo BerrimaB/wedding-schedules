@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-21T22:45:27",
+  "generated_at": "2026-03-21T22:47:38",
   "jobs": [
     {
       "title": "WS_Carnell_21.03.26",
@@ -8,6 +8,14 @@
       "venue": "THE BOOK BARN",
       "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Carnell_21.03.26/"
+    },
+    {
+      "title": "WS_Carpenter_21.03.26",
+      "booking_date": "2026-03-21",
+      "client": "Shilo & Campbell",
+      "venue": "MONTROSE HOUSE",
+      "status": "LOCAL READY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Carpenter_21.03.26/"
     },
     {
       "title": "test",
