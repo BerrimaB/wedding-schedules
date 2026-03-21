@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-21T22:47:38",
+  "generated_at": "2026-03-21T22:49:13",
   "jobs": [
     {
       "title": "WS_Carnell_21.03.26",
@@ -18,20 +18,12 @@
       "url": "https://berrimab.github.io/wedding-schedules/WS_Carpenter_21.03.26/"
     },
     {
-      "title": "test",
-      "booking_date": "2026-03-21",
-      "client": "test",
+      "title": "WS_YEE_28.03.26",
+      "booking_date": "2026-03-28",
+      "client": "2X MINIBUSES FOR MARGARET TO GROWWILD ON SAT 28.03.26",
       "venue": "GROWWILD",
       "status": "DB ONLY",
-      "url": "https://berrimab.github.io/wedding-schedules/test/"
-    },
-    {
-      "title": "WS_Rosenfels_14.03.26",
-      "booking_date": "2026-03-28",
-      "client": "Samantha & Robert",
-      "venue": "MALI BRAE",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Rosenfels_14.03.26/"
+      "url": "https://berrimab.github.io/wedding-schedules/WS_YEE_28.03.26/"
     }
   ]
 }
