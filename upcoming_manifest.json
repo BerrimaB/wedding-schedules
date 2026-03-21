@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-21T22:44:38",
+  "generated_at": "2026-03-21T22:45:27",
   "jobs": [
     {
       "title": "WS_Carnell_21.03.26",
@@ -8,6 +8,22 @@
       "venue": "THE BOOK BARN",
       "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Carnell_21.03.26/"
+    },
+    {
+      "title": "test",
+      "booking_date": "2026-03-21",
+      "client": "test",
+      "venue": "GROWWILD",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/test/"
+    },
+    {
+      "title": "WS_Rosenfels_14.03.26",
+      "booking_date": "2026-03-28",
+      "client": "Samantha & Robert",
+      "venue": "MALI BRAE",
+      "status": "LOCAL READY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Rosenfels_14.03.26/"
     }
   ]
 }
