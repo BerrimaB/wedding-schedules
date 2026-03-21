@@ -23,7 +23,7 @@
     .toolbtn.primary { background:#111827; color:#fff; border-color:#111827; }
     .banner { display:none; margin-bottom:12px; padding:14px 16px; border-radius:18px; background:var(--recent-bg); border:1px solid var(--recent-bd); font-size:13px; font-weight:900; }
     .card { border:1px solid var(--border); border-radius:24px; padding:18px; margin-bottom:16px; background:var(--panel); box-shadow:0 4px 14px rgba(17,24,39,.05); }
-    .hero { position:sticky; top:58px; z-index:9; background:rgba(255,255,255,.97); backdrop-filter: blur(6px); }
+    .hero { position:relative; background:rgba(255,255,255,.97); }
     .hero-top { display:flex; justify-content:space-between; gap:16px; align-items:flex-start; }
     .hero-left { display:flex; gap:14px; align-items:flex-start; }
     .logo { height:48px; width:auto; }
@@ -68,9 +68,17 @@
     .global-notes .note-panel + .note-panel { margin-top:10px; }
     .stop-card.next-stop { background:var(--next-bg); border-color:var(--next-bd); box-shadow:0 0 0 2px rgba(147,197,253,.18) inset, 0 4px 14px rgba(17,24,39,.05); }
     .stop-card.next-stop .time-block { background:#2563eb; }
+    .stop-card.completed-stop { opacity:.55; transform:scale(.995); }
+    .stop-card.completed-stop .time-block { background:#9ca3af; }
+    .stop-card.upcoming-stop { border-style:dashed; }
+    .stop-card.untimed-stop { border-style:dotted; }
+    .updated-pill { background:#111827; color:#fff; border-color:#111827; }
+    .bottom-bar { position: sticky; bottom: 14px; z-index: 12; display:flex; gap:10px; padding-top:6px; }
+    .bottom-bar .toolbtn { flex:1 1 0; text-align:center; }
+    .bottom-bar .toolbtn.primary { box-shadow:0 8px 20px rgba(17,24,39,.22); }
+    .spacer-bottom { height: 18px; }
     .muted { color: var(--muted); font-size: 12px; }
     @media (max-width: 720px) {
-      .hero { top:58px; }
       .hero-top { flex-direction:column; }
       .updated-box { min-width:0; width:100%; }
       .summary-grid { grid-template-columns:1fr; }
@@ -80,17 +88,20 @@
       .pill-row { justify-content:flex-start; }
       .toolbar { gap:8px; flex-wrap:wrap; }
       .toolbtn { flex:1 1 auto; text-align:center; }
+      .bottom-bar { bottom:8px; flex-wrap:wrap; }
       .title { font-size:30px; }
       .stop-title { font-size:24px; }
     }
   </style>
 </head>
-<body data-generated-iso="2026-03-20T13:38:04">
+<body data-generated-iso="2026-03-21T22:47:28">
 <div class="wrap">
-  <div class="toolbar">
-    <a class="toolbtn" href="index.html">← Bus list</a>
-    <a class="toolbtn" href="javascript:forceRefreshCurrentPage();">Refresh page</a>
-    <a class="toolbtn primary" href="javascript:forceRefreshCurrentPage();">Force refresh this bus</a>
+  <div class="toolbar slim-toolbar">
+    <div class="toolbar-bus">BUS 2</div>
+    <div class="toolbar-actions">
+      <a class="toolbtn" href="index.html">← Bus list</a>
+      <a class="toolbtn primary" href="javascript:forceRefreshCurrentPage();">Refresh</a>
+    </div>
   </div>
 
   <div id="recentUpdateBanner" class="banner"></div>
@@ -113,7 +124,8 @@
       </div>
       <div class="updated-box">
         <div class="updated-label">Last updated</div>
-        <div class="updated-time">20-03-2026 01:38PM</div>
+        <div class="updated-time">21-03-2026 10:47PM</div>
+        <div class="updated-pill" style="display:none; margin-top:8px;">Updated</div>
       </div>
     </div>
   </div>
@@ -124,7 +136,7 @@
       <div class="summary-item"><div class="label">Bus</div><div class="summary-value">BUS 2</div></div>
       <div class="summary-item"><div class="label">Timed stops</div><div class="summary-value">8</div></div>
     </div>
-    <div id="nextStopBadge" class="next-badge" style="display:none;">Next stop highlighted below</div>
+    <div id="nextStopBadge" class="next-badge" style="display:none;">Next stop highlighted below · completed stops are dimmed</div>
   </div>
 
   
@@ -141,7 +153,7 @@
                               <div class="stop-title">THE BOWRAL HOTEL</div>
                               <div class="stop-address">THE BOWRAL HOTEL</div>
                             </div>
-                            <div class="pill-row"><span class="pill">16PAX</span></div>
+                            <div class="pill-row"><span class="pill soft status-chip-inline">Upcoming</span><span class="pill updated-pill" style="display:none;">Updated</span><span class="pill">16PAX</span></div>
                           </div>
                           <div class="stop-actions">
                             <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=THE+BOWRAL+HOTEL">Open in Maps</a>
@@ -163,7 +175,7 @@
                               <div class="stop-title">DORMIE HOUSE, MOSS VALE</div>
                               <div class="stop-address">DORMIE HOUSE, MOSS VALE</div>
                             </div>
-                            <div class="pill-row"><span class="pill">2PAX</span></div>
+                            <div class="pill-row"><span class="pill soft status-chip-inline">Upcoming</span><span class="pill updated-pill" style="display:none;">Updated</span><span class="pill">2PAX</span></div>
                           </div>
                           <div class="stop-actions">
                             <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=DORMIE+HOUSE%2C+MOSS+VALE">Open in Maps</a>
@@ -185,7 +197,7 @@
                               <div class="stop-title">ARGYLE HOTEL</div>
                               <div class="stop-address">ARGYLE HOTEL</div>
                             </div>
-                            <div class="pill-row"><span class="pill">8PAX</span></div>
+                            <div class="pill-row"><span class="pill soft status-chip-inline">Upcoming</span><span class="pill updated-pill" style="display:none;">Updated</span><span class="pill">8PAX</span></div>
                           </div>
                           <div class="stop-actions">
                             <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=ARGYLE+HOTEL">Open in Maps</a>
@@ -207,7 +219,7 @@
                               <div class="stop-title">MOSS VALE VILLAGE PARK</div>
                               <div class="stop-address">MOSS VALE VILLAGE PARK</div>
                             </div>
-                            <div class="pill-row"><span class="pill">7PAX</span></div>
+                            <div class="pill-row"><span class="pill soft status-chip-inline">Upcoming</span><span class="pill updated-pill" style="display:none;">Updated</span><span class="pill">7PAX</span></div>
                           </div>
                           <div class="stop-actions">
                             <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=MOSS+VALE+VILLAGE+PARK">Open in Maps</a>
@@ -229,7 +241,7 @@
                               <div class="stop-title">MERRETT DR, MOSS VALE</div>
                               <div class="stop-address">MERRETT DR, MOSS VALE</div>
                             </div>
-                            <div class="pill-row"><span class="pill">11PAX</span></div>
+                            <div class="pill-row"><span class="pill soft status-chip-inline">Upcoming</span><span class="pill updated-pill" style="display:none;">Updated</span><span class="pill">11PAX</span></div>
                           </div>
                           <div class="stop-actions">
                             <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=MERRETT+DR%2C+MOSS+VALE">Open in Maps</a>
@@ -248,7 +260,7 @@
                               <div class="stop-title">506 OLD ARGYLE ROAD, EXETER</div>
                               <div class="stop-address">506 OLD ARGYLE ROAD, EXETER</div>
                             </div>
-                            <div class="pill-row"><span class="pill">9PAX</span></div>
+                            <div class="pill-row"><span class="pill soft status-chip-inline">Upcoming</span><span class="pill updated-pill" style="display:none;">Updated</span><span class="pill">9PAX</span></div>
                           </div>
                           <div class="stop-actions">
                             <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=506+OLD+ARGYLE+ROAD%2C+EXETER">Open in Maps</a>
@@ -270,7 +282,7 @@
                               <div class="stop-title">BUNDANOON HOTEL</div>
                               <div class="stop-address">BUNDANOON HOTEL</div>
                             </div>
-                            <div class="pill-row"><span class="pill">2PAX</span></div>
+                            <div class="pill-row"><span class="pill soft status-chip-inline">Upcoming</span><span class="pill updated-pill" style="display:none;">Updated</span><span class="pill">2PAX</span></div>
                           </div>
                           <div class="stop-actions">
                             <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=BUNDANOON+HOTEL">Open in Maps</a>
@@ -292,7 +304,7 @@
                               <div class="stop-title">ARRIVE MONTROSE HOUSE</div>
                               <div class="stop-address">ARRIVE MONTROSE HOUSE</div>
                             </div>
-                            <div class="pill-row"></div>
+                            <div class="pill-row"><span class="pill soft status-chip-inline">Upcoming</span><span class="pill updated-pill" style="display:none;">Updated</span></div>
                           </div>
                           <div class="stop-actions">
                             <a class="map-btn" href="https://www.google.com/maps/search/?api=1&query=ARRIVE+MONTROSE+HOUSE">Open in Maps</a>
@@ -307,6 +319,12 @@
 
   <div class="card">
     <div class="muted">BERRIMA BUSLINES • Mobile View</div>
+  </div>
+  <div class="spacer-bottom"></div>
+  <div class="bottom-bar">
+    <a class="toolbtn" href="index.html">← Bus list</a>
+    <a class="toolbtn" href="javascript:forceRefreshCurrentPage();">Refresh</a>
+    <a class="toolbtn primary" href="javascript:forceRefreshCurrentPage();">Open latest</a>
   </div>
 </div>
 <script>
@@ -341,6 +359,7 @@ function showRecentBanner() {
     } else {
       banner.textContent = 'SCHEDULE UPDATED RECENTLY — ' + diffMin + ' MIN AGO';
     }
+    document.querySelectorAll('.updated-pill').forEach(function(el) { el.style.display = 'inline-flex'; });
   }
 }
 function flashIfForcedRefresh() {
@@ -373,44 +392,71 @@ function forceRefreshAllBuses() {
   });
   window.location.href = buildBustUrl(window.location.href);
 }
-
-(function() {
-  function parseTimeToToday(raw) {
-    if (!raw) return null;
-    raw = String(raw).trim().toUpperCase();
-    if (!raw || raw === 'RETURN ONLY') return null;
-    var m = raw.match(/^(\d{1,2}):(\d{2})(AM|PM)$/);
-    if (!m) return null;
-    var h = parseInt(m[1], 10);
-    var min = parseInt(m[2], 10);
-    var ap = m[3];
-    if (ap === 'PM' && h !== 12) h += 12;
-    if (ap === 'AM' && h === 12) h = 0;
-    var d = new Date();
-    d.setHours(h, min, 0, 0);
-    return d;
-  }
-
+function parseTimeToToday(raw) {
+  if (!raw) return null;
+  raw = String(raw).trim().toUpperCase();
+  if (!raw || raw === 'RETURN ONLY') return null;
+  var m = raw.match(/^(\d{1,2}):(\d{2})(AM|PM)$/);
+  if (!m) return null;
+  var h = parseInt(m[1], 10);
+  var min = parseInt(m[2], 10);
+  var ap = m[3];
+  if (ap === 'PM' && h !== 12) h += 12;
+  if (ap === 'AM' && h === 12) h = 0;
+  var d = new Date();
+  d.setHours(h, min, 0, 0);
+  return d;
+}
+function setBusProgressStates() {
   var stops = Array.prototype.slice.call(document.querySelectorAll('.stop-card[data-stop-time]'));
+  if (!stops.length) return;
   var now = new Date();
   var next = null;
+  var nextDt = null;
+  var lastTimed = null;
   stops.forEach(function(el) {
     var dt = parseTimeToToday(el.getAttribute('data-stop-time'));
     if (!dt) return;
-    if (!next && dt.getTime() >= now.getTime()) next = el;
+    lastTimed = el;
+    if (!next && dt.getTime() >= now.getTime()) {
+      next = el;
+      nextDt = dt;
+    }
   });
-  if (!next) {
-    var timed = stops.filter(function(el) { return parseTimeToToday(el.getAttribute('data-stop-time')); });
-    if (timed.length) next = timed[timed.length - 1];
+  if (!next && lastTimed) {
+    next = lastTimed;
+    nextDt = parseTimeToToday(next.getAttribute('data-stop-time'));
   }
+  stops.forEach(function(el) {
+    var dt = parseTimeToToday(el.getAttribute('data-stop-time'));
+    var statusEl = el.querySelector('.status-chip-inline');
+    if (!dt) {
+      if (statusEl) statusEl.textContent = 'Untimed';
+      el.classList.add('untimed-stop');
+      return;
+    }
+    if (next && el === next) {
+      el.classList.add('next-stop');
+      if (statusEl) statusEl.textContent = 'Next';
+      return;
+    }
+    if (nextDt && dt.getTime() < nextDt.getTime()) {
+      el.classList.add('completed-stop');
+      if (statusEl) statusEl.textContent = 'Completed';
+    } else {
+      el.classList.add('upcoming-stop');
+      if (statusEl) statusEl.textContent = 'Upcoming';
+    }
+  });
   if (next) {
-    next.classList.add('next-stop');
     var badge = document.getElementById('nextStopBadge');
-    if (badge) badge.style.display = 'inline-block';
+    if (badge) badge.style.display = 'inline-flex';
   }
-  showRecentBanner();
-  flashIfForcedRefresh();
-})();
+}
+
+showRecentBanner();
+flashIfForcedRefresh();
+setBusProgressStates();
 </script>
 </body>
 </html>
