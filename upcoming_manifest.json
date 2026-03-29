@@ -1,6 +1,14 @@
 {
-  "generated_at": "2026-03-29T20:02:12",
+  "generated_at": "2026-03-29T20:18:00",
   "jobs": [
+    {
+      "title": "WS_Sheppard_02.04.26",
+      "booking_date": "2026-04-02",
+      "client": "WEDDING BUS FOR NICK & LEXI TO GROWWILD ON THUR 02.04.26",
+      "venue": "GROWWILD",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Sheppard_02.04.26/"
+    },
     {
       "title": "WS_Davidson_09.04.26",
       "booking_date": "2026-04-09",
