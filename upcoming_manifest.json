@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-04T12:57:54",
+  "generated_at": "2026-04-07T13:34:42",
   "jobs": [
     {
       "title": "WS_Davidson_09.04.26",
@@ -24,6 +24,22 @@
       "venue": "GROWWILD",
       "status": "DB ONLY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Mclenaghan_11.04.26/"
+    },
+    {
+      "title": "WS_Ajaka_18.04.26",
+      "booking_date": "2026-04-18",
+      "client": "Emily",
+      "venue": "CAOURA CLIFFS",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Ajaka_18.04.26/"
+    },
+    {
+      "title": "WS_Bean_18.04.26",
+      "booking_date": "2026-04-18",
+      "client": "Lucy & Adrian",
+      "venue": "THE BOOK BARN",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Bean_18.04.26/"
     }
   ]
 }
