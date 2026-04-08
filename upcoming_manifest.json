@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-04-08T15:24:52",
+  "generated_at": "2026-04-08T15:43:33",
   "jobs": [
     {
       "title": "WS_Davidson_09.04.26",
@@ -38,7 +38,7 @@
       "booking_date": "2026-04-11",
       "client": "Emily & Mitchell",
       "venue": "GROWWILD",
-      "status": "DB ONLY",
+      "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Mclenaghan_11.04.26/"
     },
     {
