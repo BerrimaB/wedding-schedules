@@ -1,12 +1,12 @@
 {
-  "generated_at": "2026-04-07T13:34:42",
+  "generated_at": "2026-04-08T15:11:51",
   "jobs": [
     {
       "title": "WS_Davidson_09.04.26",
       "booking_date": "2026-04-09",
       "client": "Chloe & Tom",
       "venue": "THE STABLES",
-      "status": "DB ONLY",
+      "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Davidson_09.04.26/"
     },
     {
@@ -16,6 +16,22 @@
       "venue": "THE BOOK BARN",
       "status": "DB ONLY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Small_10.04.26/"
+    },
+    {
+      "title": "WS_Giovenco_11.04.26",
+      "booking_date": "2026-04-11",
+      "client": "Simone & Blake",
+      "venue": "CENTENNIAL VINEYARDS",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Giovenco_11.04.26/"
+    },
+    {
+      "title": "WS_HART_11.04.26",
+      "booking_date": "2026-04-11",
+      "client": "Ryan & Olivia",
+      "venue": "CAOURA CLIFFS",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_HART_11.04.26/"
     },
     {
       "title": "WS_Mclenaghan_11.04.26",
