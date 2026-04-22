@@ -1,29 +1,13 @@
 {
-  "generated_at": "2026-04-17T09:55:31",
+  "generated_at": "2026-04-22T15:06:51",
   "jobs": [
     {
-      "title": "WS_ Kaul_17.04.26",
-      "booking_date": "2026-04-17",
-      "client": "Rohan & Saesha",
-      "venue": "THE BOOK BARN",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_%20Kaul_17.04.26/"
-    },
-    {
-      "title": "WS_Ajaka_18.04.26",
-      "booking_date": "2026-04-18",
-      "client": "Emily",
-      "venue": "CAOURA CLIFFS",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Ajaka_18.04.26/"
-    },
-    {
-      "title": "WS_Bean_18.04.26",
-      "booking_date": "2026-04-18",
-      "client": "Lucy & Adrian",
-      "venue": "THE BOOK BARN",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Bean_18.04.26/"
+      "title": "WS_Paruk_24.04.26",
+      "booking_date": "2026-04-24",
+      "client": "Adam & Melanie",
+      "venue": "THE STABLES",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Paruk_24.04.26/"
     }
   ]
 }
