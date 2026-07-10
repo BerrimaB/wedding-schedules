@@ -1,13 +1,13 @@
 {
-  "generated_at": "2026-07-10T17:15:54",
+  "generated_at": "2026-07-10T17:27:44",
   "jobs": [
     {
-      "title": "WS_Borthwick",
-      "booking_date": "2026-07-10",
+      "title": "WS_Borthwick_18.07.26",
+      "booking_date": "2026-07-18",
       "client": "Luke & Andrea",
       "venue": "CENTENNIAL VINEYARDS",
-      "status": "DB ONLY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Borthwick/"
+      "status": "LOCAL READY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Borthwick_18.07.26/"
     },
     {
       "title": "WS_Shepherd_15.10.26",
