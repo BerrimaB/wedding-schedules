@@ -1,21 +1,13 @@
 {
-  "generated_at": "2026-05-22T14:25:23",
+  "generated_at": "2026-07-10T17:15:54",
   "jobs": [
     {
-      "title": "WS_Dimarco_23.05.26",
-      "booking_date": "2026-05-23",
-      "client": "Joseph & Lindsey",
-      "venue": "THE STABLES",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Dimarco_23.05.26/"
-    },
-    {
-      "title": "WS_Quarisa_23.05.26",
-      "booking_date": "2026-05-23",
-      "client": "Nadine & Frank",
-      "venue": "THE BOOK BARN",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Quarisa_23.05.26/"
+      "title": "WS_Borthwick",
+      "booking_date": "2026-07-10",
+      "client": "Luke & Andrea",
+      "venue": "CENTENNIAL VINEYARDS",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Borthwick/"
     },
     {
       "title": "WS_Shepherd_15.10.26",
