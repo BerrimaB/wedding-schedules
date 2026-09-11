@@ -1,14 +1,6 @@
 {
-  "generated_at": "2026-09-11T11:12:24",
+  "generated_at": "2026-09-11T11:23:37",
   "jobs": [
-    {
-      "title": "WS_Button_01.10.26",
-      "booking_date": "2026-09-11",
-      "client": "Katrina & Lucas",
-      "venue": "Scri",
-      "status": "DB ONLY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Button_01.10.26/"
-    },
     {
       "title": "WS_Lockwood_12.09.26",
       "booking_date": "2026-09-12",
@@ -24,6 +16,14 @@
       "venue": "CAOURA CLIFFS",
       "status": "DB ONLY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Ocampo/"
+    },
+    {
+      "title": "WS_Button_01.10.26",
+      "booking_date": "2026-10-01",
+      "client": "Katrina & Lucas",
+      "venue": "Sribbly Farm",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Button_01.10.26/"
     },
     {
       "title": "WS_Glennon_01.10.26",
