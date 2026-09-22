@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-18T11:05:03",
+  "generated_at": "2026-09-22T11:24:35",
   "jobs": [
     {
       "title": "WS_Ocampo",
@@ -21,7 +21,7 @@
       "title": "WS_Glennon_01.10.26",
       "booking_date": "2026-10-01",
       "client": "Emily",
-      "venue": "CAOURA CLIFFS",
+      "venue": "CAOURA CLIFFS RECEPTION HALL",
       "status": "DB ONLY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Glennon_01.10.26/"
     },
