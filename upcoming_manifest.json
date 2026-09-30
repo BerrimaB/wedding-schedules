@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-30T10:34:52",
+  "generated_at": "2026-09-30T10:35:09",
   "jobs": [
     {
       "title": "WS_Button_01.10.26",
@@ -30,7 +30,7 @@
       "booking_date": "2026-10-15",
       "client": "Joshua & Jenna",
       "venue": "THE STABLES",
-      "status": "DB ONLY",
+      "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Shepherd_15.10.26/"
     },
     {
