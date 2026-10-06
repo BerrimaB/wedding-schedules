@@ -1,6 +1,14 @@
 {
-  "generated_at": "2026-10-06T13:36:13",
+  "generated_at": "2026-10-06T15:13:56",
   "jobs": [
+    {
+      "title": "WS_Corbett_09.10.26",
+      "booking_date": "2026-10-09",
+      "client": "William",
+      "venue": "MONTROSE HOUSE",
+      "status": "LOCAL READY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Corbett_09.10.26/"
+    },
     {
       "title": "WS_Tran_10.10.26",
       "booking_date": "2026-10-10",
