@@ -1,37 +1,21 @@
 {
-  "generated_at": "2026-10-07T16:57:46",
+  "generated_at": "2026-10-19T20:57:43",
   "jobs": [
     {
-      "title": "WS_Corbett_09.10.26",
-      "booking_date": "2026-10-09",
-      "client": "William",
-      "venue": "MONTROSE HOUSE",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Corbett_09.10.26/"
-    },
-    {
-      "title": "WS_Tran_10.10.26",
-      "booking_date": "2026-10-10",
-      "client": "Wendy & Lylee",
-      "venue": "SOMERLEY HOUSE",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Tran_10.10.26/"
-    },
-    {
-      "title": "WS_Shepherd_15.10.26",
-      "booking_date": "2026-10-15",
-      "client": "Joshua & Jenna",
+      "title": "WS_Iannuzzi_24.10.26",
+      "booking_date": "2026-10-24",
+      "client": "Alexander & Ashley",
       "venue": "THE STABLES",
       "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Shepherd_15.10.26/"
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Iannuzzi_24.10.26/"
     },
     {
-      "title": "WS_Bensley_17.10.26",
-      "booking_date": "2026-10-17",
-      "client": "Claudia & Tommaso",
-      "venue": "MONTROSE HOUSE",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Bensley_17.10.26/"
+      "title": "WS_Ford_29.10.26",
+      "booking_date": "2026-10-29",
+      "client": "Lee",
+      "venue": "CAOURA CLIFFS",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Ford_29.10.26/"
     },
     {
       "title": "WS_Boesen_30.10.26",
@@ -42,11 +26,19 @@
       "url": "https://berrimab.github.io/wedding-schedules/WS_Boesen_30.10.26/"
     },
     {
+      "title": "WS_Leckie_31.10.26",
+      "booking_date": "2026-10-31",
+      "client": "Jane & Andrew",
+      "venue": "THE BOOK BARN",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Leckie_31.10.26/"
+    },
+    {
       "title": "WS_Altit_07.11.26",
       "booking_date": "2026-11-07",
       "client": "Michael & Daniel",
       "venue": "THE BOOK BARN",
-      "status": "LOCAL READY",
+      "status": "DB ONLY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Altit_07.11.26/"
     }
   ]
