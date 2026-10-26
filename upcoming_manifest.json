@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-27T08:44:44",
+  "generated_at": "2026-10-27T08:51:39",
   "jobs": [
     {
       "title": "WS_Ford_29.10.26",
@@ -16,6 +16,14 @@
       "venue": "GROWWILD",
       "status": "DB ONLY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Boesen_30.10.26/"
+    },
+    {
+      "title": "WS_Fraser_30.10.26",
+      "booking_date": "2026-10-30",
+      "client": "Conor & Bella",
+      "venue": "52 COLO ROAD, COLO VALE",
+      "status": "LOCAL READY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Fraser_30.10.26/"
     },
     {
       "title": "WS_Leckie_31.10.26",
