@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-28T15:28:50",
+  "generated_at": "2026-10-29T12:13:17",
   "jobs": [
     {
       "title": "WS_Ford_29.10.26",
@@ -30,7 +30,7 @@
       "booking_date": "2026-10-31",
       "client": "Jane & Andrew",
       "venue": "THE BOOK BARN",
-      "status": "DB ONLY",
+      "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Leckie_31.10.26/"
     },
     {
