@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-04T09:10:17",
+  "generated_at": "2026-11-04T09:49:27",
   "jobs": [
     {
       "title": "WS_Birkett_06.11.26",
@@ -46,7 +46,7 @@
       "booking_date": "2026-11-08",
       "client": "Gabriella & Stephanie",
       "venue": "MALI BRAE",
-      "status": "DB ONLY",
+      "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Ryan_08.11.26/"
     },
     {
