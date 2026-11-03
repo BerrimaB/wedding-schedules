@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-02T14:03:26",
+  "generated_at": "2026-11-03T14:06:20",
   "jobs": [
     {
       "title": "WS_Birkett_06.11.26",
@@ -32,6 +32,14 @@
       "venue": "CAOURA CLIFFS",
       "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Hatzantonis_07.11.26/"
+    },
+    {
+      "title": "WS_Ryan_08.11.26",
+      "booking_date": "2026-11-08",
+      "client": "Gabriella & Stephanie",
+      "venue": "MALI BRAE",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Ryan_08.11.26/"
     },
     {
       "title": "WS_Friedlander_29.11.26",
