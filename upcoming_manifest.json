@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-05T10:47:13",
+  "generated_at": "2026-11-05T12:42:00",
   "jobs": [
     {
       "title": "WS_Birkett_06.11.26",
@@ -56,6 +56,22 @@
       "venue": "MALI BRAE",
       "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Ryan_08.11.26/"
+    },
+    {
+      "title": "WS_Reisch_14.11.26",
+      "booking_date": "2026-11-14",
+      "client": "Lexi & Sam",
+      "venue": "SOMERLEY HOUSE",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Reisch_14.11.26/"
+    },
+    {
+      "title": "WS_Dunkey_21.11.26",
+      "booking_date": "2026-11-21",
+      "client": "Kathryn & Hugh",
+      "venue": "CAOURA CLIFFS",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Dunkey_21.11.26/"
     },
     {
       "title": "WS_Friedlander_29.11.26",
