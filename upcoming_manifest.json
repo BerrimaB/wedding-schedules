@@ -1,6 +1,14 @@
 {
-  "generated_at": "2026-11-05T15:20:37",
+  "generated_at": "2026-11-05T15:55:09",
   "jobs": [
+    {
+      "title": "WS_Smith_27.11.26",
+      "booking_date": "2026-11-05",
+      "client": "BLAKE & BARBORA",
+      "venue": "KALINYA ESTATE",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Smith_27.11.26/"
+    },
     {
       "title": "WS_Birkett_06.11.26",
       "booking_date": "2026-11-06",
