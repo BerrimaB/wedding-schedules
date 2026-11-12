@@ -1,6 +1,14 @@
 {
-  "generated_at": "2026-11-09T13:23:30",
+  "generated_at": "2026-11-12T13:30:35",
   "jobs": [
+    {
+      "title": "WS_Moroney",
+      "booking_date": "2026-11-12",
+      "client": "WEDDING BUS FOR MITCHELL & ELLE-MAY TO SOMERLEY HOUSE ON SUN 15.11.26",
+      "venue": "SOMERLEY HOUSE",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Moroney/"
+    },
     {
       "title": "WS_Markey_14.11.26",
       "booking_date": "2026-11-14",
@@ -22,7 +30,7 @@
       "booking_date": "2026-11-21",
       "client": "Kathryn & Hugh",
       "venue": "CAOURA CLIFFS",
-      "status": "DB ONLY",
+      "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Dunkey_21.11.26/"
     },
     {
