@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T16:31:27",
+  "generated_at": "2026-11-16T16:35:37",
   "jobs": [
     {
       "title": "WS_Dunkey_21.11.26",
@@ -28,9 +28,9 @@
     {
       "title": "WS_Faccin_28.11.26",
       "booking_date": "2026-11-28",
-      "client": "WEDDING BUS FOR JESSCIA & IAN TO SOMERLEY HOUSE ON SAT 28.11.26",
+      "client": "Jessica & Ian",
       "venue": "SOMERLEY HOUSE",
-      "status": "DB ONLY",
+      "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Faccin_28.11.26/"
     },
     {
