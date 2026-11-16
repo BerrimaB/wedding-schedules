@@ -1,30 +1,6 @@
 {
-  "generated_at": "2026-11-12T13:52:10",
+  "generated_at": "2026-11-16T16:31:27",
   "jobs": [
-    {
-      "title": "WS_Markey_14.11.26",
-      "booking_date": "2026-11-14",
-      "client": "Brittany & Lewis",
-      "venue": "CAOURA CLIFFS",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Markey_14.11.26/"
-    },
-    {
-      "title": "WS_Reisch_14.11.26",
-      "booking_date": "2026-11-14",
-      "client": "Lexi & Sam",
-      "venue": "SOMERLEY HOUSE",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Reisch_14.11.26/"
-    },
-    {
-      "title": "WS_Moroney",
-      "booking_date": "2026-11-15",
-      "client": "Mitchell & Elle-May",
-      "venue": "SOMERLEY HOUSE",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Moroney/"
-    },
     {
       "title": "WS_Dunkey_21.11.26",
       "booking_date": "2026-11-21",
@@ -48,6 +24,14 @@
       "venue": "KALINYA ESTATE",
       "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/CHATER_Smith_28.11.26/"
+    },
+    {
+      "title": "WS_Faccin_28.11.26",
+      "booking_date": "2026-11-28",
+      "client": "WEDDING BUS FOR JESSCIA & IAN TO SOMERLEY HOUSE ON SAT 28.11.26",
+      "venue": "SOMERLEY HOUSE",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Faccin_28.11.26/"
     },
     {
       "title": "WS_Friedlander_29.11.26",
