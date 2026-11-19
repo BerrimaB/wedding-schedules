@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-16T16:42:15",
+  "generated_at": "2026-11-19T12:17:57",
   "jobs": [
     {
       "title": "WS_Dunkey_21.11.26",
@@ -10,20 +10,20 @@
       "url": "https://berrimab.github.io/wedding-schedules/WS_Dunkey_21.11.26/"
     },
     {
-      "title": "WS_Smith_27.11.26",
-      "booking_date": "2026-11-27",
-      "client": "BLAKE & BARBORA",
-      "venue": "KALINYA ESTATE",
-      "status": "DB ONLY",
-      "url": "https://berrimab.github.io/wedding-schedules/WS_Smith_27.11.26/"
+      "title": "WS_HE_26.11.26",
+      "booking_date": "2026-11-26",
+      "client": "Vanessa & Tyler",
+      "venue": "THE BOOK BARN",
+      "status": "LOCAL READY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_HE_26.11.26/"
     },
     {
-      "title": "CHATER_Smith_28.11.26",
+      "title": "WS_Coman_28.11.26",
       "booking_date": "2026-11-28",
-      "client": "BLAKE & BARBORA",
-      "venue": "KALINYA ESTATE",
-      "status": "LOCAL READY",
-      "url": "https://berrimab.github.io/wedding-schedules/CHATER_Smith_28.11.26/"
+      "client": "James & Whitney",
+      "venue": "8 East St, Robertson",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Coman_28.11.26/"
     },
     {
       "title": "WS_Faccin_28.11.26",
