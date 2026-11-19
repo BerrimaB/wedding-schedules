@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T12:21:43",
+  "generated_at": "2026-11-19T12:49:45",
   "jobs": [
     {
       "title": "WS_Dunkey_21.11.26",
@@ -40,6 +40,14 @@
       "venue": "THE STABLES",
       "status": "DB ONLY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Friedlander_29.11.26/"
+    },
+    {
+      "title": "WS_Hazelton_29.11.26",
+      "booking_date": "2026-11-29",
+      "client": "John & Rachel",
+      "venue": "GROWWILD",
+      "status": "LOCAL READY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Hazelton_29.11.26/"
     }
   ]
 }
