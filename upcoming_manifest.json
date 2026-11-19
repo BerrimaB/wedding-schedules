@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-19T12:17:57",
+  "generated_at": "2026-11-19T12:21:43",
   "jobs": [
     {
       "title": "WS_Dunkey_21.11.26",
@@ -22,7 +22,7 @@
       "booking_date": "2026-11-28",
       "client": "James & Whitney",
       "venue": "8 East St, Robertson",
-      "status": "DB ONLY",
+      "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Coman_28.11.26/"
     },
     {
