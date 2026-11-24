@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-11-23T11:40:28",
+  "generated_at": "2026-11-24T15:22:16",
   "jobs": [
     {
       "title": "WS_HE_26.11.26",
@@ -40,6 +40,22 @@
       "venue": "GROWWILD",
       "status": "LOCAL READY",
       "url": "https://berrimab.github.io/wedding-schedules/WS_Hazelton_29.11.26/"
+    },
+    {
+      "title": "test",
+      "booking_date": "2026-11-29",
+      "client": "test",
+      "venue": "GROWWILD",
+      "status": "DB ONLY",
+      "url": "https://berrimab.github.io/wedding-schedules/test/"
+    },
+    {
+      "title": "WS_Shelton_04.12.26",
+      "booking_date": "2026-12-04",
+      "client": "Ashleigh & Jacob",
+      "venue": "ST FRANCIS XAVIER",
+      "status": "LOCAL READY",
+      "url": "https://berrimab.github.io/wedding-schedules/WS_Shelton_04.12.26/"
     }
   ]
 }
